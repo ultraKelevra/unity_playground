@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\- vrtual-envs\- projects\unity\unity_playground" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="- glitch" t="Include">
+          <e p="scripts" t="Include">
+            <e p="SlashEffect.cs" t="Include" />
+            <e p="TriggerAnimators.cs" t="Include" />
+          </e>
+          <e p="shaders" t="Include">
+            <e p="glitch_4.shader" t="Include" />
+            <e p="line.shader" t="Include" />
+            <e p="MultipleLightsBumped_Toon.shader" t="Include" />
+            <e p="ShadowCaster.cginc" t="Include" />
+            <e p="SpriteDepthWrite.cginc" t="Include" />
+            <e p="SpriteMask.shader" t="Include" />
+            <e p="ToonLighting.cginc" t="Include" />
+          </e>
+        </e>
+        <e p="- multipleToonLights" t="Include">
+          <e p="shaders" t="Include">
+            <e p="first-light.shader" t="Include" />
+            <e p="MultipleLights.shader" t="Include" />
+            <e p="MultipleLightsBumped_Toon.shader" t="Include" />
+            <e p="My Lighting Bumped_Toon.cginc" t="Include" />
+            <e p="My Lighting.cginc" t="Include" />
+          </e>
+        </e>
+        <e p="- physicsInRig" t="Include">
+          <e p="scripts" t="Include">
+            <e p="FollowTo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="- RayTracing" t="Include">
+          <e p="AddShader.shader" t="Include" />
+          <e p="RayTracer.cs" t="Include" />
+          <e p="RayTracerShader.compute" t="Include" />
+        </e>
+        <e p="- vox-mesh" t="Include">
+          <e p="VoxelBuffer.cs" t="Include" />
+          <e p="VoxelFiller.compute" t="Include" />
+          <e p="VoxelMeshGen.compute" t="Include" />
+        </e>
+        <e p="DOTween" t="Include">
+          <e p="DOTween43.xml" t="Include" />
+          <e p="DOTween46.xml" t="Include" />
+          <e p="DOTween50.xml" t="Include" />
+          <e p="Examples" t="Include">
+            <e p="Basics.cs" t="Include" />
+            <e p="Sequences.cs" t="Include" />
+          </e>
+          <e p="readme.txt" t="Include" />
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="unity_playground.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Pe\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_unity_playground.1303311875.00" t="ExcludeRecursive" />
+  </component>
+</project>
