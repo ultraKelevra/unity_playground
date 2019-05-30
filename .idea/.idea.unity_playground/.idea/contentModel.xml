@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\- vrtual-envs\- projects\unity\unity_playground" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="- glitch" t="Include">
@@ -39,6 +38,9 @@
           <e p="RayTracer.cs" t="Include" />
           <e p="RayTracerShader.compute" t="Include" />
         </e>
+        <e p="- roundWorld" t="Include">
+          <e p="RoundMesh.shader" t="Include" />
+        </e>
         <e p="- vox-mesh" t="Include">
           <e p="VoxelBuffer.cs" t="Include" />
           <e p="VoxelFiller.compute" t="Include" />
@@ -54,22 +56,13 @@
           </e>
           <e p="readme.txt" t="Include" />
         </e>
-        <e p="Plugins" t="Include">
-          <e p="Editor" t="Include">
-            <e p="JetBrains" t="Include">
-              <e p="Unity3DRider.cs" t="Include" />
-            </e>
-          </e>
-        </e>
       </e>
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="unity_playground.sln" t="IncludeFlat" />
     </e>
-    <e p="C:\Users\Pe\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_unity_playground.1303311875.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Pe\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Pe\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_unity_playground.1303311875.00" t="ExcludeRecursive" />
   </component>
 </project>
