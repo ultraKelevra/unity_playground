@@ -4,15 +4,7 @@ Shader "Unlit/RoundMesh"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
-        _Radius ("Radius", Float) = 1
-        _HorizontalScale("Horizontal Scale", Range(0,100)) = 5
-        _VerticalScale("Scale", Range(0,5)) = 5
-        _SphereOffset("Sphere Offset", Vector) = (0, -15, 0, 1)
-        _CoordinateInterpolation("Coordinate Interpolation", Range(0,1)) = 1
-        _PivotRotationX("Pivot Rotation X", Range(0, 1)) = 0
-        _PivotRotationY("Pivot Rotation Y", Range(0, 1)) = 0
-        _PivotRotationZ("Pivot Rotation Z", Range(0, 1)) = 0
+        _Color("Color", Color) = (1,1,1,1)
     }
     SubShader
     {
@@ -33,6 +25,7 @@ Shader "Unlit/RoundMesh"
             {
                 float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
+                half4 color: COLOR;
             };
 
             struct v2f
@@ -40,6 +33,7 @@ Shader "Unlit/RoundMesh"
                 float2 uv : TEXCOORD0;
                 UNITY_FOG_COORDS(1)
                 float4 vertex : SV_POSITION;
+                half4 color: COLOR;
             };
 
             sampler2D _MainTex;
@@ -56,7 +50,7 @@ Shader "Unlit/RoundMesh"
 	        float _PivotRotationZ;
 	        
 	        float _CoordinateInterpolation;
-	        
+	        float4 _WorldOffset;
 	        inline float3x3 xRotation3dRadians(float rad) {
                 float s = sin(rad);
                 float c = cos(rad);
@@ -91,7 +85,7 @@ Shader "Unlit/RoundMesh"
                 
                 float3 wPos = mul(unity_ObjectToWorld, v.vertex);
                 
-                float3 polar = float3(wPos.x/(_HorizontalScale), wPos.y * _VerticalScale + _SphereOffset.y + _Radius, wPos.z/(_HorizontalScale));
+                float3 polar = float3((wPos.z + _WorldOffset.z)/_HorizontalScale, wPos.y * _VerticalScale + _Radius, (-wPos.x + _WorldOffset.x)/_HorizontalScale);
                 float3 cartesian = float3
                 (cos(polar.z) * sin(polar.x),
                 cos(polar.x),
@@ -105,18 +99,20 @@ Shader "Unlit/RoundMesh"
                 finalPoint = mul(zRotation3dRadians(_PivotRotationZ*3.1415f), finalPoint);
                 
                 finalPoint += _SphereOffset;
-                
+//                finalPoint.x+= normalize(finalPoint.xz - _SphereOffset.xz)*
                 o.vertex = mul(UNITY_MATRIX_VP,float4(finalPoint,1));
-
+                o.color = v.color;
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
                 return o;
             }
 
+            half4 _Color;
             fixed4 frag (v2f i) : SV_Target
             {
                 // sample the texture
-                fixed4 col = float4(1,1,1,1);
+                fixed4 col = i.color * _Color;
+//                fixed4 col = float4(1,1,1,1);
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
