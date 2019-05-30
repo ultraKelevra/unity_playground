@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c37e08b2-d5d8-4a3b-a47e-f9058fdb5957" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/- roundWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/- roundWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/round.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/round.mat" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,14 +42,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="92" column="65" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
+            <state relative-caret-position="216">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding>
-                <marker date="1559220767403" expanded="true" signature="95:3581" ph="{...}" />
-                <marker date="1559220767403" expanded="true" signature="116:642" ph="{...}" />
-                <marker date="1559220767403" expanded="true" signature="661:3579" ph="{...}" />
-                <marker date="1559220767403" expanded="true" signature="740:3573" ph="{...}" />
-                <marker date="1559220767403" expanded="true" signature="763:3558" ph="{...}" />
+                <marker date="1559222412924" expanded="true" signature="95:3950" ph="{...}" />
+                <marker date="1559222412924" expanded="true" signature="116:642" ph="{...}" />
+                <marker date="1559222412924" expanded="true" signature="661:3948" ph="{...}" />
+                <marker date="1559222412924" expanded="true" signature="740:3942" ph="{...}" />
+                <marker date="1559222412924" expanded="true" signature="763:3927" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -155,12 +149,12 @@
       <workItem from="1559166017245" duration="1421000" />
       <workItem from="1559167599665" duration="3844000" />
       <workItem from="1559176180077" duration="7602000" />
-      <workItem from="1559219723229" duration="1051000" />
+      <workItem from="1559219723229" duration="2478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31012000" />
+    <option name="totallyTimeSpent" value="32439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -279,14 +273,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="92" column="65" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
+        <state relative-caret-position="216">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding>
-            <marker date="1559220767403" expanded="true" signature="95:3581" ph="{...}" />
-            <marker date="1559220767403" expanded="true" signature="116:642" ph="{...}" />
-            <marker date="1559220767403" expanded="true" signature="661:3579" ph="{...}" />
-            <marker date="1559220767403" expanded="true" signature="740:3573" ph="{...}" />
-            <marker date="1559220767403" expanded="true" signature="763:3558" ph="{...}" />
+            <marker date="1559222412924" expanded="true" signature="95:3950" ph="{...}" />
+            <marker date="1559222412924" expanded="true" signature="116:642" ph="{...}" />
+            <marker date="1559222412924" expanded="true" signature="661:3948" ph="{...}" />
+            <marker date="1559222412924" expanded="true" signature="740:3942" ph="{...}" />
+            <marker date="1559222412924" expanded="true" signature="763:3927" ph="{...}" />
           </folding>
         </state>
       </provider>

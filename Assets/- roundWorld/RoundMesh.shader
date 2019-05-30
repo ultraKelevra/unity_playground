@@ -6,8 +6,8 @@ Shader "Unlit/RoundMesh"
     {
         _MainTex ("Texture", 2D) = "white" {}
         _Radius ("Radius", Float) = 1
-        _HorizontalScale("Horizontal Scale", Range(0,10)) = 5
-        _VerticalScale("Scale", Range(1,50)) = 5
+        _HorizontalScale("Horizontal Scale", Range(0,100)) = 5
+        _VerticalScale("Scale", Range(0,5)) = 5
         _SphereOffset("Sphere Offset", Vector) = (0, -15, 0, 1)
         _CoordinateInterpolation("Coordinate Interpolation", Range(0,1)) = 1
         _PivotRotationX("Pivot Rotation X", Range(0, 1)) = 0
@@ -49,6 +49,7 @@ Shader "Unlit/RoundMesh"
 	        float _HorizontalScale;
 	        float _VerticalScale;
 	        float4 _SphereOffset;
+	        float _Radius;
 	        
 	        float _PivotRotationX;
 	        float _PivotRotationY;
@@ -90,18 +91,22 @@ Shader "Unlit/RoundMesh"
                 
                 float3 wPos = mul(unity_ObjectToWorld, v.vertex);
                 
-                float3 polar = float3(wPos.x/(_HorizontalScale*2), wPos.y + _SphereOffset.y, wPos.z/(_HorizontalScale*2));
+                float3 polar = float3(wPos.x/(_HorizontalScale), wPos.y * _VerticalScale + _SphereOffset.y + _Radius, wPos.z/(_HorizontalScale));
                 float3 cartesian = float3
                 (cos(polar.z) * sin(polar.x),
                 cos(polar.x),
                 sin(polar.z) * sin(polar.x))
                 * polar.y;
                 
-                cartesian += _SphereOffset;
-                
                 cartesian = lerp(wPos, cartesian, _CoordinateInterpolation);
+                float3 finalPoint = cartesian;
+                finalPoint = mul(xRotation3dRadians(_PivotRotationX*3.1415f), finalPoint);
+                finalPoint = mul(yRotation3dRadians(_PivotRotationY*3.1415f), finalPoint);
+                finalPoint = mul(zRotation3dRadians(_PivotRotationZ*3.1415f), finalPoint);
                 
-                o.vertex = mul(UNITY_MATRIX_VP,float4(cartesian,1));
+                finalPoint += _SphereOffset;
+                
+                o.vertex = mul(UNITY_MATRIX_VP,float4(finalPoint,1));
 
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
