@@ -1,15 +1,14 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-
-Shader "Unlit/RoundMesh"
+﻿Shader "Unlit/RoundMesh"
 {
     Properties
     {
         _Color("Color", Color) = (1,1,1,1)
+        _MinNL("Min N.L", Range(0,1)) = 0
+        _MaxNL("Max N.L", Range(0,1)) = 1
     }
     SubShader
     {
         Tags { "RenderType"="Opaque" }
-        LOD 100
 
         Pass
         {
@@ -24,21 +23,20 @@ Shader "Unlit/RoundMesh"
             struct appdata
             {
                 float4 vertex : POSITION;
-                float2 uv : TEXCOORD0;
                 half4 color: COLOR;
+                half3 normal: NORMAL;
             };
 
             struct v2f
             {
-                float2 uv : TEXCOORD0;
-                UNITY_FOG_COORDS(1)
+                UNITY_FOG_COORDS(0)
                 float4 vertex : SV_POSITION;
                 half4 color: COLOR;
+                half3 normal: NORMAL;
             };
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
-
 
 	        float _HorizontalScale;
 	        float _VerticalScale;
@@ -51,6 +49,7 @@ Shader "Unlit/RoundMesh"
 	        
 	        float _CoordinateInterpolation;
 	        float4 _WorldOffset;
+	        
 	        inline float3x3 xRotation3dRadians(float rad) {
                 float s = sin(rad);
                 float c = cos(rad);
@@ -92,28 +91,34 @@ Shader "Unlit/RoundMesh"
                 sin(polar.z) * sin(polar.x))
                 * polar.y;
                 
-                cartesian = lerp(wPos, cartesian, _CoordinateInterpolation);
+                
                 float3 finalPoint = cartesian;
-                finalPoint = mul(xRotation3dRadians(_PivotRotationX*3.1415f), finalPoint);
-                finalPoint = mul(yRotation3dRadians(_PivotRotationY*3.1415f), finalPoint);
-                finalPoint = mul(zRotation3dRadians(_PivotRotationZ*3.1415f), finalPoint);
+                finalPoint = mul(xRotation3dRadians(_PivotRotationX*3.141592f), finalPoint);
+                finalPoint = mul(yRotation3dRadians(_PivotRotationY*3.141592f), finalPoint);
+                finalPoint = mul(zRotation3dRadians(_PivotRotationZ*3.141592f), finalPoint);
                 
                 finalPoint += _SphereOffset;
-//                finalPoint.x+= normalize(finalPoint.xz - _SphereOffset.xz)*
+                
+                finalPoint = lerp(wPos, finalPoint, _CoordinateInterpolation);
+                
+                o.normal = normalize(mul(unity_ObjectToWorld, v.normal));
                 o.vertex = mul(UNITY_MATRIX_VP,float4(finalPoint,1));
                 o.color = v.color;
-                o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
                 return o;
             }
 
             half4 _Color;
+            half _MinNL;
+            half _MaxNL;
+            
             fixed4 frag (v2f i) : SV_Target
             {
-                // sample the texture
-                fixed4 col = i.color * _Color;
-//                fixed4 col = float4(1,1,1,1);
-                // apply fog
+                
+				fixed4 col = (i.color * _Color);
+				half directionalLightInfluence = max(0,dot(i.normal, _WorldSpaceLightPos0.xyz));
+				directionalLightInfluence = lerp(_MinNL, _MaxNL, directionalLightInfluence * directionalLightInfluence * directionalLightInfluence);
+                col*=directionalLightInfluence;
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
             }

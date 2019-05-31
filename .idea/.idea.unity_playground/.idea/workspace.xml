@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c37e08b2-d5d8-4a3b-a47e-f9058fdb5957" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/- roundWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/- roundWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/Honey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/Honey.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/Metal.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/big-plane.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/big-plane.fbx.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/round.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/round.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" afterDir="false" />
     </list>
@@ -16,57 +21,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/- vox-mesh/VoxelBuffer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-              <folding>
-                <marker date="1557417603921" expanded="false" signature="6:78" ph="..." />
-                <marker date="1557417603921" expanded="true" signature="120:473" ph="{...}" />
-                <marker date="1557417603921" expanded="true" signature="371:392" ph="{...}" />
-                <marker date="1557417603921" expanded="true" signature="450:471" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="113" column="46" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+            <state relative-caret-position="394">
+              <caret line="119" column="146" selection-start-line="119" selection-start-column="146" selection-end-line="119" selection-end-column="146" />
               <folding>
-                <marker date="1559231594555" expanded="true" signature="95:3753" ph="{...}" />
-                <marker date="1559231594555" expanded="true" signature="116:166" ph="{...}" />
-                <marker date="1559231594555" expanded="true" signature="185:3751" ph="{...}" />
-                <marker date="1559231594555" expanded="true" signature="264:3745" ph="{...}" />
-                <marker date="1559231594555" expanded="true" signature="287:3730" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundWorldAvatar.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding>
-                <marker date="1559231872110" expanded="false" signature="6:78" ph="..." />
-                <marker date="1559231872110" expanded="true" signature="144:2233" ph="{...}" />
-                <marker date="1559231872110" expanded="true" signature="1512:1524" ph="{...}" />
-                <marker date="1559231872110" expanded="true" signature="1582:2231" ph="{...}" />
-                <marker date="1559231872110" expanded="true" signature="1608:2225" ph="{...}" />
+                <marker date="1559304930168" expanded="true" signature="25:3984" ph="{...}" />
+                <marker date="1559304930168" expanded="true" signature="46:180" ph="{...}" />
+                <marker date="1559304930168" expanded="true" signature="199:3982" ph="{...}" />
+                <marker date="1559304930168" expanded="true" signature="262:3976" ph="{...}" />
+                <marker date="1559304930168" expanded="true" signature="285:3961" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -89,7 +54,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/AddShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundWorldAvatar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- vox-mesh/VoxelBuffer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -100,13 +64,13 @@
         <option value="$PROJECT_DIR$/Assets/- RayTracing/RayTracer.cs" />
         <option value="$PROJECT_DIR$/Assets/- vox-mesh/VoxelBuffer.cs" />
         <option value="$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" />
-        <option value="$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" />
         <option value="$PROJECT_DIR$/Assets/- roundWorld/RoundWorldAvatar.cs" />
+        <option value="$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="247" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="245" />
     <option name="y" value="175" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -169,12 +133,14 @@
       <workItem from="1559166017245" duration="1421000" />
       <workItem from="1559167599665" duration="3844000" />
       <workItem from="1559176180077" duration="7602000" />
-      <workItem from="1559219723229" duration="7681000" />
+      <workItem from="1559219723229" duration="10565000" />
+      <workItem from="1559266965271" duration="3697000" />
+      <workItem from="1559304421699" duration="588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37642000" />
+    <option name="totallyTimeSpent" value="44811000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -186,7 +152,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2926491" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -263,9 +229,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- roundWorld/NewUnlitShader.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundWorldAvatar.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/- vox-mesh/VoxelBuffer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="240">
           <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding>
             <marker date="1557417603921" expanded="false" signature="6:78" ph="..." />
@@ -276,44 +258,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- roundWorld/NewUnlitShader.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="113" column="46" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+        <state relative-caret-position="394">
+          <caret line="119" column="146" selection-start-line="119" selection-start-column="146" selection-end-line="119" selection-end-column="146" />
           <folding>
-            <marker date="1559231594555" expanded="true" signature="95:3753" ph="{...}" />
-            <marker date="1559231594555" expanded="true" signature="116:166" ph="{...}" />
-            <marker date="1559231594555" expanded="true" signature="185:3751" ph="{...}" />
-            <marker date="1559231594555" expanded="true" signature="264:3745" ph="{...}" />
-            <marker date="1559231594555" expanded="true" signature="287:3730" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundWorldAvatar.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <marker date="1559231872110" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559231872110" expanded="true" signature="144:2233" ph="{...}" />
-            <marker date="1559231872110" expanded="true" signature="1512:1524" ph="{...}" />
-            <marker date="1559231872110" expanded="true" signature="1582:2231" ph="{...}" />
-            <marker date="1559231872110" expanded="true" signature="1608:2225" ph="{...}" />
+            <marker date="1559304930168" expanded="true" signature="25:3984" ph="{...}" />
+            <marker date="1559304930168" expanded="true" signature="46:180" ph="{...}" />
+            <marker date="1559304930168" expanded="true" signature="199:3982" ph="{...}" />
+            <marker date="1559304930168" expanded="true" signature="262:3976" ph="{...}" />
+            <marker date="1559304930168" expanded="true" signature="285:3961" ph="{...}" />
           </folding>
         </state>
       </provider>

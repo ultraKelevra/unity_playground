@@ -1,17 +1,24 @@
 fileFormatVersion: 2
-guid: 466efc2948278ef4290994cd665dd2bd
+guid: 5602841ff91749a4a9090431fbac2ec0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Flowers
+    100002: //RootNode
+    100004: Icosphere
+    400000: Flowers
+    400002: //RootNode
+    400004: Icosphere
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Plane
+    2300000: Flowers
+    2300002: Icosphere
+    3300000: Flowers
+    3300002: Icosphere
+    4300000: Flowers
+    4300002: Icosphere
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -65,7 +72,7 @@ ModelImporter:
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0

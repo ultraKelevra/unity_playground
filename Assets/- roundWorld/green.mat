@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: round
+  m_Name: green
   m_Shader: {fileID: 4800000, guid: 7b2a8d6eb09cb114f83936e694e67509, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -57,33 +57,23 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _CoordinateInterpolation: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HorizontalScale: 18.9
     - _MaxNL: 1
-    - _MaxSize: 5
     - _Metallic: 0
-    - _MinNL: 0.32
+    - _MinNL: 0.21
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _PivotRotationX: 0.5
-    - _PivotRotationY: 0
-    - _PivotRotationZ: 1.6
-    - _Radius: 16.13
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _VerticalScale: 0.85
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.38038585, g: 1, b: 0.3726415, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SphereOffset: {r: 10, g: -7, b: 10, a: 1}
-    - _WorldOffset: {r: 15, g: 15, b: 14, a: 1}
