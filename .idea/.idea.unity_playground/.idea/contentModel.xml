@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\- vrtual-envs\- projects\unity\unity_playground" t="IncludeRecursive">
+    <e p="C:\Users\Pe\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Pe\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_unity_playground.1330185551.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Pe\Documents\GitHub\unity_playground" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="- glitch" t="Include">
@@ -26,6 +28,14 @@
             <e p="MultipleLightsBumped_Toon.shader" t="Include" />
             <e p="My Lighting Bumped_Toon.cginc" t="Include" />
             <e p="My Lighting.cginc" t="Include" />
+          </e>
+        </e>
+        <e p="- particle_controller" t="Include">
+          <e p="ParticleTweener" t="Include">
+            <e p="BezierSpline.cs" t="Include" />
+            <e p="ParticleDirectionTweener.cs" t="Include" />
+            <e p="ParticleTweenerModule.cs" t="Include" />
+            <e p="ParticleTweenerUtility.cs" t="Include" />
           </e>
         </e>
         <e p="- physicsInRig" t="Include">
@@ -63,7 +73,5 @@
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="unity_playground.sln" t="IncludeFlat" />
     </e>
-    <e p="C:\Users\Pe\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Pe\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_unity_playground.1303311875.00" t="ExcludeRecursive" />
   </component>
 </project>
