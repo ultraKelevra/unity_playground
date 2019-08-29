@@ -4,6 +4,7 @@
     <e p="C:\Users\Pe\.Rider2019.1\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Pe\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_unity_playground.1330185551.00" t="ExcludeRecursive" />
     <e p="C:\Users\Pe\Documents\GitHub\unity_playground" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="- glitch" t="Include">
@@ -32,7 +33,12 @@
         </e>
         <e p="- particle_controller" t="Include">
           <e p="ParticleTweener" t="Include">
+            <e p="BezierCurve.cs" t="Include" />
+            <e p="BezierCurveAvatar.cs" t="Include" />
             <e p="BezierSpline.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="BezierCurveAvatarEditor.cs" t="Include" />
+            </e>
             <e p="ParticleDirectionTweener.cs" t="Include" />
             <e p="ParticleTweenerModule.cs" t="Include" />
             <e p="ParticleTweenerUtility.cs" t="Include" />

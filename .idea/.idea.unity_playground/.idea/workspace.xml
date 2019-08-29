@@ -5,17 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/- OctreeMesh.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/- glitch/shaders/Glitch.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/- roundWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/- roundWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- particle_controller/- particleController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- particle_controller/- particleController.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierSpline.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="-106">
+              <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding>
                 <marker date="1566959383127" expanded="true" signature="61:1600" ph="{...}" />
                 <marker date="1566959383127" expanded="true" signature="301:385" ph="{...}" />
@@ -41,6 +34,65 @@
                 <marker date="1566959383127" expanded="true" signature="1096:1257" ph="{...}" />
                 <marker date="1566959383127" expanded="true" signature="1428:1484" ph="{...}" />
                 <marker date="1566959383127" expanded="true" signature="1542:1598" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierCurve.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+              <folding>
+                <marker date="1567111261954" expanded="true" signature="6:166" ph="..." />
+                <marker date="1567111261954" expanded="true" signature="205:305" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="328:378" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="419:3148" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="608:734" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="816:929" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="1009:1184" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="1303:1663" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="1699:2366" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="1714:1855" ph="/* if it gets to 1 the values will have an offset from the actual array ... */" />
+                <marker date="1567111261954" expanded="true" signature="2442:3016" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="2709:2831" ph="{...}" />
+                <marker date="1567111261954" expanded="true" signature="3072:3146" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Editor/BezierCurveAvatarEditor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="31" column="109" selection-start-line="31" selection-start-column="109" selection-end-line="31" selection-end-column="109" />
+              <folding>
+                <marker date="1567111886276" expanded="true" signature="6:37" ph="..." />
+                <marker date="1567111886276" expanded="true" signature="126:2553" ph="{...}" />
+                <marker date="1567111886276" expanded="true" signature="228:256" ph="{...}" />
+                <marker date="1567111886276" expanded="true" signature="300:2331" ph="{...}" />
+                <marker date="1567111886276" expanded="true" signature="360:1945" ph="{...}" />
+                <marker date="1567111886276" expanded="true" signature="881:1020" ph="{...}" />
+                <marker date="1567111886276" expanded="true" signature="1351:1591" ph="{...}" />
+                <marker date="1567111886276" expanded="true" signature="1790:1935" ph="{...}" />
+                <marker date="1567111886276" expanded="true" signature="2184:2325" ph="{...}" />
+                <marker date="1567111886276" expanded="true" signature="2352:2551" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierCurveAvatar.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+              <folding>
+                <marker date="1567096647561" expanded="true" signature="86:921" ph="{...}" />
+                <marker date="1567096647561" expanded="true" signature="136:231" ph="{...}" />
+                <marker date="1567096647561" expanded="true" signature="263:919" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -65,9 +117,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweenerModule.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/AddShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierSpline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierCurveAvatar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleDirectionTweener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Editor/BezierCurveAvatarEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierCurve.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweenerUtility.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -84,14 +139,16 @@
         <option value="$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweenerUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleDirectionTweener.cs" />
         <option value="$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierSpline.cs" />
+        <option value="$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierCurveAvatar.cs" />
+        <option value="$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierCurve.cs" />
+        <option value="$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Editor/BezierCurveAvatarEditor.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="245" />
-    <option name="y" value="175" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="width" value="978" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -158,11 +215,14 @@
       <workItem from="1566915057816" duration="1820000" />
       <workItem from="1566917501722" duration="5581000" />
       <workItem from="1566947488453" duration="9250000" />
+      <workItem from="1567006478534" duration="650000" />
+      <workItem from="1567021097331" duration="593000" />
+      <workItem from="1567085614151" duration="15247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61462000" />
+    <option name="totallyTimeSpent" value="77952000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -175,6 +235,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2926491" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -320,8 +381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweenerUtility.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="386">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <marker date="1566956568038" expanded="true" signature="134:1369" ph="{...}" />
             <marker date="1566956568038" expanded="true" signature="183:230" ph="{...}" />
@@ -335,8 +396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierSpline.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="-106">
+          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding>
             <marker date="1566959383127" expanded="true" signature="61:1600" ph="{...}" />
             <marker date="1566959383127" expanded="true" signature="301:385" ph="{...}" />
@@ -348,6 +409,59 @@
             <marker date="1566959383127" expanded="true" signature="1096:1257" ph="{...}" />
             <marker date="1566959383127" expanded="true" signature="1428:1484" ph="{...}" />
             <marker date="1566959383127" expanded="true" signature="1542:1598" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierCurveAvatar.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+          <folding>
+            <marker date="1567096647561" expanded="true" signature="86:921" ph="{...}" />
+            <marker date="1567096647561" expanded="true" signature="136:231" ph="{...}" />
+            <marker date="1567096647561" expanded="true" signature="263:919" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Editor/BezierCurveAvatarEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="31" column="109" selection-start-line="31" selection-start-column="109" selection-end-line="31" selection-end-column="109" />
+          <folding>
+            <marker date="1567111886276" expanded="true" signature="6:37" ph="..." />
+            <marker date="1567111886276" expanded="true" signature="126:2553" ph="{...}" />
+            <marker date="1567111886276" expanded="true" signature="228:256" ph="{...}" />
+            <marker date="1567111886276" expanded="true" signature="300:2331" ph="{...}" />
+            <marker date="1567111886276" expanded="true" signature="360:1945" ph="{...}" />
+            <marker date="1567111886276" expanded="true" signature="881:1020" ph="{...}" />
+            <marker date="1567111886276" expanded="true" signature="1351:1591" ph="{...}" />
+            <marker date="1567111886276" expanded="true" signature="1790:1935" ph="{...}" />
+            <marker date="1567111886276" expanded="true" signature="2184:2325" ph="{...}" />
+            <marker date="1567111886276" expanded="true" signature="2352:2551" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/BezierCurve.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+          <folding>
+            <marker date="1567111261954" expanded="true" signature="6:166" ph="..." />
+            <marker date="1567111261954" expanded="true" signature="205:305" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="328:378" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="419:3148" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="608:734" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="816:929" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="1009:1184" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="1303:1663" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="1699:2366" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="1714:1855" ph="/* if it gets to 1 the values will have an offset from the actual array ... */" />
+            <marker date="1567111261954" expanded="true" signature="2442:3016" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="2709:2831" ph="{...}" />
+            <marker date="1567111261954" expanded="true" signature="3072:3146" ph="{...}" />
           </folding>
         </state>
       </provider>
