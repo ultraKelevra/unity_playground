@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class ParticleSplineBehavior : ParticleTweenerModule
     private ParticleSystem _pSystem;
     public Stack<BezierCurve> CurvesOnWait;
     public List<BezierCurve> CurvesOnUse;
+    public List<float> time;
     private float _lifeTime;
     public Vector3 a;
     public Vector3 b = new Vector3(0, 0, 5);
@@ -23,11 +25,13 @@ public class ParticleSplineBehavior : ParticleTweenerModule
         _pSystem = GetComponent<ParticleSystem>();
         CurvesOnUse = new List<BezierCurve>(particleTweener.ParticleMaxCount);
         CurvesOnWait = new Stack<BezierCurve>(particleTweener.ParticleMaxCount);
+        time = new List<float>(particleTweener.ParticleMaxCount);
         _lifeTime = _pSystem.main.startLifetime.constant;
     }
 
     public void Pop(Vector3 from, Vector3 to)
     {
+        Debug.Log("Pop");
         if (CurvesOnWait.Count != 0)
         {
             var curve = CurvesOnWait.Pop();
@@ -41,6 +45,8 @@ public class ParticleSplineBehavior : ParticleTweenerModule
 
     public void Recycle()
     {
+        Debug.Log("Recycle");
+
         CurvesOnWait.Push(CurvesOnUse[0]);
         CurvesOnUse.RemoveAt(0);
     }
@@ -58,8 +64,10 @@ public class ParticleSplineBehavior : ParticleTweenerModule
             Recycle();
         }
 
+        
         for (i = 0; i < count; i++)
         {
+//            time[i] < _lifeTime
             particles[i].position = CurvesOnUse[i].GetPos(1 - particles[i].remainingLifetime / _lifeTime);
         }
     }

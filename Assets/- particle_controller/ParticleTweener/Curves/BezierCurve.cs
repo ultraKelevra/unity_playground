@@ -114,9 +114,9 @@ public class BezierCurve
 
     public static void MakeFromToAvoidingObstacles(Vector3 a, Vector3 b, Obstacle[] obstacles, BezierCurve bezierCurve)
     {
-        for (int i = 0; i < bezierCurve._segmentCount + 1; i++)
+        for (var i = 0; i < bezierCurve._segmentCount + 1; i++)
         {
-            for (int j = 0; j < obstacles.Length; j++)
+            for (var j = 0; j < obstacles.Length; j++)
             {
                 if (InsideObstacleRadius(bezierCurve.Spline[i].position, obstacles[j]))
                 {
