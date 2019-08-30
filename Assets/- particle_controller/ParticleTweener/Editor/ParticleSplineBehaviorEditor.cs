@@ -37,23 +37,23 @@ public class ParticleSplineBehaviorEditor : Editor
                 curve.GetSegment(i, out posA, out controlA, out posB, out controlB);
                 Handles.DrawBezier(posA, posB, controlA, controlB, Color.green, null, 2);
 
-                Handles.color = Color.green;
+//                Handles.color = Color.green;
                 //center handle
-                temp =
-                    Handles.FreeMoveHandle(posA, Quaternion.identity, .25f, Vector3.zero, Handles.SphereHandleCap);
+//                temp =
+//                    Handles.FreeMoveHandle(posA, Quaternion.identity, .25f, Vector3.zero, Handles.SphereHandleCap);
 //                if (posA != temp)
 //                {
 //                    Undo.RecordObject(bezier, "MoveBezierPoint");
 //                    curve.Spline[i].position = temp;
 //                }
 
-                Handles.DrawLine(posA, controlA);
-                Handles.DrawLine(posB, controlB);
-
-                Handles.color = Color.red;
+//                Handles.DrawLine(posA, controlA);
+//                Handles.DrawLine(posB, controlB);
+//
+//                Handles.color = Color.red;
                 //B control point
-                temp =
-                    Handles.FreeMoveHandle(controlB, Quaternion.identity, .15f, Vector3.zero, Handles.SphereHandleCap);
+//                temp =
+//                    Handles.FreeMoveHandle(controlB, Quaternion.identity, .15f, Vector3.zero, Handles.SphereHandleCap);
 //                if (controlB != temp)
 //                {
 //                    Undo.RecordObject(bezier, "MoveBezierPoint");
@@ -61,10 +61,10 @@ public class ParticleSplineBehaviorEditor : Editor
 //                }
 
                 //A control point
-                if (i > 0)
-                    Handles.color = new Color(1, .5f, .5f, 1);
-                temp =
-                    Handles.FreeMoveHandle(controlA, Quaternion.identity, .15f, Vector3.zero, Handles.SphereHandleCap);
+//                if (i > 0)
+//                    Handles.color = new Color(1, .5f, .5f, 1);
+//                temp =
+//                    Handles.FreeMoveHandle(controlA, Quaternion.identity, .15f, Vector3.zero, Handles.SphereHandleCap);
 //                if (controlA != temp)
 //                {
 //                    Undo.RecordObject(bezier, "MoveBezierPoint");
@@ -75,10 +75,10 @@ public class ParticleSplineBehaviorEditor : Editor
             }
 
 
-            Handles.color = Color.green;
-            temp = Handles.FreeMoveHandle(curve.Spline[curve._segmentCount].position, Quaternion.identity, .25f,
-                Vector3.zero,
-                Handles.SphereHandleCap);
+//            Handles.color = Color.green;
+//            temp = Handles.FreeMoveHandle(curve.Spline[curve._segmentCount].position, Quaternion.identity, .25f,
+//                Vector3.zero,
+//                Handles.SphereHandleCap);
 //            if (curve.Spline[curve._segmentCount].position != temp)
 //            {
 //                Undo.RecordObject(bezier, "MoveBezierPoint");
