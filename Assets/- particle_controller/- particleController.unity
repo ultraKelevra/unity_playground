@@ -254,11 +254,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curve:
-    _spline:
-    - position: {x: 0.14, y: 0, z: 0}
-      controlPoint: {x: 0.81, y: 0.92, z: 2.03}
-    - position: {x: -0.32, y: 1.44, z: 3}
-      controlPoint: {x: -1.68, y: 1.09, z: 0}
+    Spline:
+    - position: {x: -8.442338, y: 1.4578876, z: 1.0055685}
+      controlPoint: {x: -6.949659, y: 0.5407784, z: 4.492754}
+    - position: {x: -3.6520615, y: 1.5458404, z: -0.4515143}
+      controlPoint: {x: -4.224292, y: 1.0145533, z: 0.05893916}
+    - position: {x: 1.8500507, y: -1.4131069, z: 3.4758682}
+      controlPoint: {x: 1.93, y: -0.5241475, z: -0.35063267}
+    _segmentCount: 2
+    _segmentRange: 0.5
 --- !u!4 &641927151
 Transform:
   m_ObjectHideFlags: 0
@@ -5027,7 +5031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1457992919
 MeshCollider:
   m_ObjectHideFlags: 0

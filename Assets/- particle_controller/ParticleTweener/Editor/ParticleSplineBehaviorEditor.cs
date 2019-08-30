@@ -2,12 +2,17 @@
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(BezierCurveAvatar))]
-public class BezierCurveAvatarEditor : Editor
+[CustomEditor(typeof(ParticleSplineBehavior))]
+public class ParticleSplineBehaviorEditor : Editor
 {
-    private BezierCurveAvatar bezier;
     private List<BezierCurve> curves;
-    private int numberOfObstacles;
+    private ParticleSplineBehavior particleSpline;
+
+    void OnEnable()
+    {
+        particleSpline = (ParticleSplineBehavior) target;
+        curves = particleSpline.CurvesOnUse;
+    }
 
     private void OnSceneGUI()
     {
@@ -36,11 +41,11 @@ public class BezierCurveAvatarEditor : Editor
                 //center handle
                 temp =
                     Handles.FreeMoveHandle(posA, Quaternion.identity, .25f, Vector3.zero, Handles.SphereHandleCap);
-                if (posA != temp)
-                {
-                    Undo.RecordObject(bezier, "MoveBezierPoint");
-                    curve.Spline[i].position = temp;
-                }
+//                if (posA != temp)
+//                {
+//                    Undo.RecordObject(bezier, "MoveBezierPoint");
+//                    curve.Spline[i].position = temp;
+//                }
 
                 Handles.DrawLine(posA, controlA);
                 Handles.DrawLine(posB, controlB);
@@ -49,24 +54,24 @@ public class BezierCurveAvatarEditor : Editor
                 //B control point
                 temp =
                     Handles.FreeMoveHandle(controlB, Quaternion.identity, .15f, Vector3.zero, Handles.SphereHandleCap);
-                if (controlB != temp)
-                {
-                    Undo.RecordObject(bezier, "MoveBezierPoint");
-                    curve.Spline[i + 1].controlPoint = temp;
-                }
+//                if (controlB != temp)
+//                {
+//                    Undo.RecordObject(bezier, "MoveBezierPoint");
+//                    curve.Spline[i + 1].controlPoint = temp;
+//                }
 
                 //A control point
                 if (i > 0)
                     Handles.color = new Color(1, .5f, .5f, 1);
                 temp =
                     Handles.FreeMoveHandle(controlA, Quaternion.identity, .15f, Vector3.zero, Handles.SphereHandleCap);
-                if (controlA != temp)
-                {
-                    Undo.RecordObject(bezier, "MoveBezierPoint");
-                    if (i != 0)
-                        curve.Spline[i].controlPoint = posA + (posA - temp);
-                    else curve.Spline[i].controlPoint = temp;
-                }
+//                if (controlA != temp)
+//                {
+//                    Undo.RecordObject(bezier, "MoveBezierPoint");
+//                    if (i != 0)
+//                        curve.Spline[i].controlPoint = posA + (posA - temp);
+//                    else curve.Spline[i].controlPoint = temp;
+//                }
             }
 
 
@@ -74,17 +79,11 @@ public class BezierCurveAvatarEditor : Editor
             temp = Handles.FreeMoveHandle(curve.Spline[curve._segmentCount].position, Quaternion.identity, .25f,
                 Vector3.zero,
                 Handles.SphereHandleCap);
-            if (curve.Spline[curve._segmentCount].position != temp)
-            {
-                Undo.RecordObject(bezier, "MoveBezierPoint");
-                curve.Spline[curve._segmentCount].position = temp;
-            }
+//            if (curve.Spline[curve._segmentCount].position != temp)
+//            {
+//                Undo.RecordObject(bezier, "MoveBezierPoint");
+//                curve.Spline[curve._segmentCount].position = temp;
+//            }
         }
-    }
-
-    void OnEnable()
-    {
-        bezier = (BezierCurveAvatar) target;
-        curves = bezier.actuallyUsedCurves;
     }
 }

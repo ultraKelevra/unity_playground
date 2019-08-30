@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+[RequireComponent(typeof(ParticleTweenerUtility))]
 public class ParticleDirectionTweener : ParticleTweenerModule
 {
     private Vector3[] _previousPositions;

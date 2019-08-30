@@ -33,15 +33,21 @@
         </e>
         <e p="- particle_controller" t="Include">
           <e p="ParticleTweener" t="Include">
-            <e p="BezierCurve.cs" t="Include" />
-            <e p="BezierCurveAvatar.cs" t="Include" />
-            <e p="BezierSpline.cs" t="Include" />
+            <e p="Curves" t="Include">
+              <e p="BezierCurve.cs" t="Include" />
+              <e p="BezierCurveAvatar.cs" t="Include" />
+              <e p="BezierSpline.cs" t="Include" />
+            </e>
             <e p="Editor" t="Include">
               <e p="BezierCurveAvatarEditor.cs" t="Include" />
+              <e p="ParticleSplineBehaviorEditor.cs" t="Include" />
             </e>
-            <e p="ParticleDirectionTweener.cs" t="Include" />
-            <e p="ParticleTweenerModule.cs" t="Include" />
-            <e p="ParticleTweenerUtility.cs" t="Include" />
+            <e p="ParticleTweener" t="Include">
+              <e p="ParticleDirectionTweener.cs" t="Include" />
+              <e p="ParticleSplineBehavior.cs" t="Include" />
+              <e p="ParticleTweenerModule.cs" t="Include" />
+              <e p="ParticleTweenerUtility.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="- physicsInRig" t="Include">

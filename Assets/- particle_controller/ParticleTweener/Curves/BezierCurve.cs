@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using DG.Tweening.Plugins.Options;
 using UnityEngine;
 
 [Serializable]
@@ -12,10 +8,11 @@ public struct WayPoint
     [SerializeField] public Vector3 controlPoint;
 }
 
-public struct Segment
+[Serializable]
+public struct Obstacle
 {
-    public WayPoint a;
-    public WayPoint b;
+    [SerializeField] public Vector3 position;
+    [SerializeField] public float radius;
 }
 
 [Serializable]
@@ -55,10 +52,8 @@ public class BezierCurve
         controlB = Spline[index + 1].controlPoint;
 
         if (index == 0) return;
-        
-        controlA.x = posA.x - controlA.x;
-        controlA.y = posA.y - controlA.y;
-        controlA.z = posA.z - controlA.z;
+
+        controlA = posA + (posA - controlA);
     }
 
     public Vector3 GetPos(float t)
@@ -82,24 +77,64 @@ public class BezierCurve
     public static BezierCurve FromTo(Vector3 a, Vector3 b, int resolution)
     {
         var distance = Vector3.Distance(a, b);
-        var segment = (a - b) * distance / resolution;
+        var segment = (b - a).normalized * (distance / resolution);
         var nextPosition = a;
         var wayPoints = new WayPoint[resolution + 1];
 
-        for (int i = 0; i < resolution - 1; i++, nextPosition += segment)
+        for (int i = 0; i < resolution; i++, nextPosition += segment)
         {
             wayPoints[i].position = nextPosition;
-            wayPoints[i].controlPoint = Vector3.up;
+            wayPoints[i].controlPoint = Vector3.up + wayPoints[i].position;
         }
 
         wayPoints[resolution].position = b;
-        wayPoints[resolution].controlPoint = Vector3.back;
+        wayPoints[resolution].controlPoint = Vector3.back + b;
 
         return new BezierCurve(wayPoints, resolution, 1.0f / resolution);
+    }
+
+    public static BezierCurve FromToAvoidingObstacles(Vector3 a, Vector3 b, Obstacle[] obstacles, int resolution)
+    {
+        var bezierCurve = FromTo(a, b, resolution);
+        for (int i = 0; i < bezierCurve._segmentCount + 1; i++)
+        {
+            for (int j = 0; j < obstacles.Length; j++)
+            {
+                if (InsideObstacleRadius(bezierCurve.Spline[i].position, obstacles[j]))
+                {
+                    bezierCurve.Spline[i].position =
+                        (bezierCurve.Spline[i].position - obstacles[j].position).normalized * obstacles[j].radius +
+                        obstacles[j].position;
+                }
+            }
+        }
+
+        return bezierCurve;
+    }
+
+    public static void MakeFromToAvoidingObstacles(Vector3 a, Vector3 b, Obstacle[] obstacles, BezierCurve bezierCurve)
+    {
+        for (int i = 0; i < bezierCurve._segmentCount + 1; i++)
+        {
+            for (int j = 0; j < obstacles.Length; j++)
+            {
+                if (InsideObstacleRadius(bezierCurve.Spline[i].position, obstacles[j]))
+                {
+                    bezierCurve.Spline[i].position =
+                        (bezierCurve.Spline[i].position - obstacles[j].position).normalized * obstacles[j].radius +
+                        obstacles[j].position;
+                }
+            }
+        }
     }
 
     public static BezierCurve GetEmpty(int resolution)
     {
         return new BezierCurve(new WayPoint[resolution + 1]);
+    }
+
+    private static bool InsideObstacleRadius(Vector3 v, Obstacle obstacle)
+    {
+        return Vector3.Distance(v, obstacle.position) < obstacle.radius;
     }
 }
