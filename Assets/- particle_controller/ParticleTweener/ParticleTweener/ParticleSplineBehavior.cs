@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(ParticleTweenerUtility))]
@@ -12,7 +10,7 @@ public class ParticleSplineBehavior : ParticleTweenerModule
     private ParticleSystem _pSystem;
     public Stack<BezierCurve> CurvesOnWait;
     public List<BezierCurve> CurvesOnUse;
-    public List<float> time;
+    public float[] time;
     private float _lifeTime;
     public Vector3 a;
     public Vector3 b = new Vector3(0, 0, 5);
@@ -25,50 +23,53 @@ public class ParticleSplineBehavior : ParticleTweenerModule
         _pSystem = GetComponent<ParticleSystem>();
         CurvesOnUse = new List<BezierCurve>(particleTweener.ParticleMaxCount);
         CurvesOnWait = new Stack<BezierCurve>(particleTweener.ParticleMaxCount);
-        time = new List<float>(particleTweener.ParticleMaxCount);
+        time = new float[particleTweener.ParticleMaxCount];
         _lifeTime = _pSystem.main.startLifetime.constant;
     }
 
-    public void Pop(Vector3 from, Vector3 to)
+    private void Pop()
     {
         Debug.Log("Pop");
         if (CurvesOnWait.Count != 0)
+            CurvesOnUse.Add(CurvesOnWait.Pop());
+        else
         {
-            var curve = CurvesOnWait.Pop();
-            BezierCurve.MakeFromToAvoidingObstacles(from, to, obstacles, curve);
-            CurvesOnUse.Add(curve);
-            return;
+            CurvesOnUse.Add(BezierCurve.GetEmpty(resolution));
+            time[CurvesOnUse.Count - 1] = 0;
         }
-
-        CurvesOnUse.Add(BezierCurve.FromToAvoidingObstacles(from, to, obstacles, resolution));
     }
 
-    public void Recycle()
+    private void Dump()
     {
-        Debug.Log("Recycle");
+        Debug.Log("Dump");
 
         CurvesOnWait.Push(CurvesOnUse[0]);
         CurvesOnUse.RemoveAt(0);
     }
 
-
     public override void UpdateModule(ParticleSystem.Particle[] particles, int count)
     {
         while (count > CurvesOnUse.Count)
-        {
-            Pop(a, b);
-        }
+            Pop();
 
         while (count < CurvesOnUse.Count)
-        {
-            Recycle();
-        }
+            Dump();
 
-        
         for (i = 0; i < count; i++)
         {
-//            time[i] < _lifeTime
-            particles[i].position = CurvesOnUse[i].GetPos(1 - particles[i].remainingLifetime / _lifeTime);
+            var remainingTime = particles[i].remainingLifetime;
+
+            //recycle
+            if (time[i] < remainingTime)
+            {
+                if (CurvesOnUse[i]._segmentCount != resolution)
+                    CurvesOnUse[i] = BezierCurve.FromToAvoidingObstacles(a, b, obstacles, resolution);
+                else
+                    CurvesOnUse[i].MakeFromToAvoidingObstacles(a, b, obstacles);
+            }
+
+            time[i] = particles[i].remainingLifetime;
+            particles[i].position = CurvesOnUse[i].GetPos(1 - time[i] / _lifeTime);
         }
     }
 }

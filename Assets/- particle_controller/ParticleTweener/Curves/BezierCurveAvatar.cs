@@ -22,7 +22,7 @@ public class BezierCurveAvatar : MonoBehaviour
 
         var curve = curves[0];
         curves.RemoveAt(0);
-        BezierCurve.MakeFromToAvoidingObstacles(from, to, obstacles, curve);
+//        BezierCurve.MakeFromToAvoidingObstacles(from, to, obstacles, curve);
         actuallyUsedCurves.Add(curve);
         return curve;
     }

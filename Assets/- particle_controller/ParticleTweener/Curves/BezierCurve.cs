@@ -76,53 +76,50 @@ public class BezierCurve
 
     public static BezierCurve FromTo(Vector3 a, Vector3 b, int resolution)
     {
-        var distance = Vector3.Distance(a, b);
-        var segment = (b - a).normalized * (distance / resolution);
-        var nextPosition = a;
-        var wayPoints = new WayPoint[resolution + 1];
+        var curve = GetEmpty(resolution);
+        curve.MakeFromTo(a, b);
 
-        for (int i = 0; i < resolution; i++, nextPosition += segment)
-        {
-            wayPoints[i].position = nextPosition;
-            wayPoints[i].controlPoint = Vector3.up + wayPoints[i].position;
-        }
-
-        wayPoints[resolution].position = b;
-        wayPoints[resolution].controlPoint = Vector3.back + b;
-
-        return new BezierCurve(wayPoints, resolution, 1.0f / resolution);
+        return curve;
     }
 
     public static BezierCurve FromToAvoidingObstacles(Vector3 a, Vector3 b, Obstacle[] obstacles, int resolution)
     {
-        var bezierCurve = FromTo(a, b, resolution);
-        for (int i = 0; i < bezierCurve._segmentCount + 1; i++)
-        {
-            for (int j = 0; j < obstacles.Length; j++)
-            {
-                if (InsideObstacleRadius(bezierCurve.Spline[i].position, obstacles[j]))
-                {
-                    bezierCurve.Spline[i].position =
-                        (bezierCurve.Spline[i].position - obstacles[j].position).normalized * obstacles[j].radius +
-                        obstacles[j].position;
-                }
-            }
-        }
-
-        return bezierCurve;
+        var curve = GetEmpty(resolution);
+        curve.MakeFromToAvoidingObstacles(a, b, obstacles);
+        return curve;
     }
 
-    public static void MakeFromToAvoidingObstacles(Vector3 a, Vector3 b, Obstacle[] obstacles, BezierCurve bezierCurve)
+    public void MakeFromTo(Vector3 a, Vector3 b)
     {
-        for (var i = 0; i < bezierCurve._segmentCount + 1; i++)
+        var distance = Vector3.Distance(a, b);
+//        var direction = (b-a).normalized;
+        var segment = (b-a).normalized * (distance / _segmentCount);
+        var nextPosition = a;
+
+        for (int i = 0; i < _segmentCount; i++, nextPosition += segment)
+        {
+            Spline[i].position = nextPosition;
+            Spline[i].controlPoint = Vector3.up + Spline[i].position;
+        }
+
+        Spline[_segmentCount].position = b;
+        Spline[_segmentCount].controlPoint = (a - b).normalized + b;
+    }
+
+    public void MakeFromToAvoidingObstacles(Vector3 a, Vector3 b, Obstacle[] obstacles)
+    {
+        MakeFromTo(a, b);
+
+        for (var i = 1; i < _segmentCount; i++)
         {
             for (var j = 0; j < obstacles.Length; j++)
             {
-                if (InsideObstacleRadius(bezierCurve.Spline[i].position, obstacles[j]))
+                if (InsideObstacleRadius(Spline[i].position, obstacles[j]))
                 {
-                    bezierCurve.Spline[i].position =
-                        (bezierCurve.Spline[i].position - obstacles[j].position).normalized * obstacles[j].radius +
+                    Spline[i].position =
+                        (Spline[i].position - obstacles[j].position).normalized * obstacles[j].radius +
                         obstacles[j].position;
+                    Spline[i].controlPoint = Spline[i].position + Vector3.up;
                 }
             }
         }
