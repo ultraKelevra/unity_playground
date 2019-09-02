@@ -177,6 +177,7 @@ void CSMain (uint3 id : SV_DispatchThreadID)
     }
   //RayHit hit = Trace(ray);
   //float3 result = Shade(ray, hit);
-  Result[id.xy] = float4(result, 1);
+  //Result[id.xy] = float4(result, 1);
+  Result[id.xy] = float4(ray.direction.xyz, 1);
 
 }

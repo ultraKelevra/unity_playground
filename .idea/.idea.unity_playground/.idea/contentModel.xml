@@ -55,6 +55,14 @@
             <e p="FollowTo.cs" t="Include" />
           </e>
         </e>
+        <e p="- RayMarching" t="Include">
+          <e p="ComputeRayMarching.compute" t="Include" />
+          <e p="DistributionTester.cs" t="Include" />
+          <e p="Random.cginc" t="Include" />
+          <e p="RayCameraStructs.cginc" t="Include" />
+          <e p="RayMarcher.cs" t="Include" />
+          <e p="RayMarching.cginc" t="Include" />
+        </e>
         <e p="- RayTracing" t="Include">
           <e p="AddShader.shader" t="Include" />
           <e p="RayTracer.cs" t="Include" />

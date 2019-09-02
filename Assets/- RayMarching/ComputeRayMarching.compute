@@ -1,0 +1,42 @@
+﻿#pragma kernel CSMain
+
+RWTexture2D<float4> Result;
+
+float4 _DirectionalLight;
+
+//skybox
+Texture2D<float4> _SkyboxTexture;
+SamplerState sampler_SkyboxTexture;
+static const float PI = 3.14159265f;
+
+float2 _PixelOffset;
+
+#include "RayCameraStructs.cginc"
+#include "RayMarching.cginc"
+
+float3 ShadeStuffs(float3 pos, float3 normal){
+    half lightIntensity = 1.f;
+    half3 albedo = half3( 1, .3f, .76f);
+    return saturate(dot(normal, float3(1,.5f,-.32f))) * lightIntensity * albedo;
+}
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    uint width, height;
+    Result.GetDimensions(width, height);
+    float2 uv = float2(id.xy / float2(width, height) * 2.0f - 1.0f);
+    Ray ray = CreateCameraRay(uv);
+    
+    float3 result = float3(0, 0, 0);
+    
+    for (int i = 0; i < 8; i++)
+    {
+        RayHit hit = RayMarch(ray);
+        result += ray.energy * Shade( ray, hit);
+        if (!any(ray.energy))
+            break;
+    }
+        
+    Result[id.xy] = float4(result,1);
+}

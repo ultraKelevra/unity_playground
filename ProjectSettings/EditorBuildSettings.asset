@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/- glitch/GlitchBot.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/- roundWorld/- roundWorld.unity
     guid: 67cffbed709b2d743a37475e4cffbfd1
   m_configObjects: {}
