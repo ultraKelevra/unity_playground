@@ -3,10 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="c37e08b2-d5d8-4a3b-a47e-f9058fdb5957" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- RayMarching/- rayMarching.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- RayMarching/- rayMarching.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- RayMarching/ComputeRayMarching.compute" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- RayMarching/ComputeRayMarching.compute" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- RayMarching/DistributionTester.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- RayMarching/DistributionTester.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- RayMarching/Random.cginc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- RayMarching/Random.cginc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- RayMarching/RayMarcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- RayMarching/RayMarcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- RayMarching/RayMarching.cginc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- RayMarching/RayMarching.cginc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- glitch/scripts/SlashEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- glitch/scripts/SlashEffect.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/- particle_controller/- particleController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- particle_controller/- particleController.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- roundWorld/- roundWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- roundWorld/- roundWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,21 +37,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarcher.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="1452">
+              <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
               <folding>
-                <marker date="1567379093921" expanded="true" signature="6:91" ph="..." />
-                <marker date="1567379093921" expanded="true" signature="189:3080" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="461:690" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="733:1651" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="850:1066" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="1134:1387" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="1469:1645" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="1732:1807" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="1859:2293" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="2331:2867" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="2434:2861" ph="{...}" />
-                <marker date="1567379093921" expanded="true" signature="2869:3078" ph="/* ##if UNITY_EDITOR ... */" />
+                <marker date="1581457669872" expanded="true" signature="393:622" ph="{...}" />
+                <marker date="1581457669872" expanded="true" signature="665:1585" ph="{...}" />
+                <marker date="1581457669872" expanded="true" signature="782:1000" ph="{...}" />
+                <marker date="1581457669872" expanded="true" signature="1068:1321" ph="{...}" />
+                <marker date="1581457669872" expanded="true" signature="1403:1579" ph="{...}" />
+                <marker date="1581457669872" expanded="true" signature="1666:1741" ph="{...}" />
+                <marker date="1581457669872" expanded="true" signature="1793:2227" ph="{...}" />
+                <marker date="1581457669872" expanded="true" signature="2265:2801" ph="{...}" />
+                <marker date="1581457669872" expanded="true" signature="2368:2795" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -42,8 +57,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/ComputeRayMarching.compute">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+            <state relative-caret-position="550">
+              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayCameraStructs.cginc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/SDF.cginc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -51,37 +84,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarching.cginc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/Random.cginc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/- multipleToonLights/shaders/My Lighting.cginc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="28" lean-forward="true" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="550">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayCameraStructs.cginc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Assets/- simpleShaders/ddd.shader">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -94,31 +105,43 @@
       <find>sphereoff</find>
       <find>_targetDim</find>
       <find>distance</find>
+      <find>ShadeStuffs</find>
+      <find>_height</find>
+      <find>vec2</find>
     </findStrings>
+    <replaceStrings>
+      <replace>float2</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Editor/ParticleSplineBehaviorEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Editor/BezierCurveAvatarEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- simpleShaders/Occlusion.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Curves/BezierCurve.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Curves/BezierCurveAvatar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/SDF.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- glitch/scripts/SlashEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/Shade2.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/Shade.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarching.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/RayCameraStructs.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/Random.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- multipleToonLights/shaders/My Lighting.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/ComputeRayMarching.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/VectorCalc.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/AddShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweener/ParticleSplineBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- vox-mesh/VoxelBuffer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweener/ParticleTweenerUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/RayCameraStructs.cginc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- roundWorld/RoundMesh.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweener/SpiralBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweener/ParticleDirectionTweener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweener/ParticleSplineBehavior.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- multipleToonLights/shaders/My Lighting.cginc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarching.cginc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Curves/BezierCurve.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/ComputeRayMarching.compute" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/AddShader.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Editor/BezierCurveAvatarEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Curves/BezierCurveAvatar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Editor/ParticleSplineBehaviorEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///C# Console" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/- RayMarching/Random.cginc" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -142,20 +165,30 @@
         <option value="$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Curves/BezierCurve.cs" />
         <option value="$PROJECT_DIR$/Assets/- RayTracing/RayTracer.cs" />
         <option value="$PROJECT_DIR$/Assets/- RayMarching/RayCameraStructs.shader" />
-        <option value="$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" />
-        <option value="$PROJECT_DIR$/Assets/- RayMarching/ComputeRayMarching.compute" />
-        <option value="$PROJECT_DIR$/Assets/- RayMarching/RayMarcher.cs" />
         <option value="$PROJECT_DIR$/Assets/- RayMarching/Random.shader" />
-        <option value="$PROJECT_DIR$/Assets/- RayMarching/RayMarching.cginc" />
-        <option value="$PROJECT_DIR$/Assets/- RayMarching/Random.cginc" />
         <option value="$PROJECT_DIR$/Assets/- RayMarching/RayCameraStructs.cginc" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/Random.cginc" />
+        <option value="$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/HemisphereSampling.cginc" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/VectorCalc.cginc" />
+        <option value="$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweener/SpiralBehavior.cs" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/Shade2.0.cginc" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/Shade2.cginc" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/Shade.cginc" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/ComputeRayMarching.compute" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/SDFs.cginc" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/SDF.cginc" />
+        <option value="$PROJECT_DIR$/Assets/- glitch/scripts/SlashEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/- simpleShaders/Occlusion.shader" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/RayMarcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/- RayMarching/RayMarching.cginc" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="975" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="width" value="1120" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -226,12 +259,21 @@
       <workItem from="1567021097331" duration="593000" />
       <workItem from="1567085614151" duration="15905000" />
       <workItem from="1567169302509" duration="23931000" />
-      <workItem from="1567351279738" duration="24468000" />
+      <workItem from="1567351279738" duration="31146000" />
+      <workItem from="1567566367251" duration="6958000" />
+      <workItem from="1567596760874" duration="3238000" />
+      <workItem from="1567644383313" duration="8197000" />
+      <workItem from="1568046608586" duration="123000" />
+      <workItem from="1574817933837" duration="466000" />
+      <workItem from="1577395458361" duration="1583000" />
+      <workItem from="1577659065584" duration="2202000" />
+      <workItem from="1581457481852" duration="896000" />
+      <workItem from="1582659348478" duration="469000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127009000" />
+    <option name="totallyTimeSpent" value="157819000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -243,8 +285,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-10" y="0" width="1120" height="1040" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2926491" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -353,19 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweener/ParticleDirectionTweener.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <marker date="1567177037748" expanded="true" signature="131:751" ph="{...}" />
-            <marker date="1567177037748" expanded="true" signature="258:346" ph="{...}" />
-            <marker date="1567177037748" expanded="true" signature="453:749" ph="{...}" />
-            <marker date="1567177037748" expanded="true" signature="495:743" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/Editor/ParticleSplineBehaviorEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -419,20 +447,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayCameraStructs.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="180" column="25" lean-forward="true" selection-start-line="180" selection-start-column="25" selection-end-line="180" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayCameraStructs.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2562">
@@ -505,41 +520,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarcher.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <marker date="1567379093921" expanded="true" signature="6:91" ph="..." />
-            <marker date="1567379093921" expanded="true" signature="189:3080" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="461:690" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="733:1651" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="850:1066" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="1134:1387" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="1469:1645" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="1732:1807" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="1859:2293" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="2331:2867" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="2434:2861" ph="{...}" />
-            <marker date="1567379093921" expanded="true" signature="2869:3078" ph="/* ##if UNITY_EDITOR ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/ComputeRayMarching.compute">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/Random.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/Random.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/- multipleToonLights/shaders/My Lighting.cginc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -547,26 +528,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarching.cginc">
+    <entry file="file://$PROJECT_DIR$/Assets/- RayTracing/RayTracerShader.compute">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        <state relative-caret-position="506">
+          <caret line="177" column="2" selection-start-line="177" selection-start-column="2" selection-end-line="177" selection-end-column="4" />
+          <caret line="178" column="2" selection-start-line="178" selection-start-column="2" selection-end-line="178" selection-end-column="4" />
+          <caret line="179" column="2" selection-start-line="179" selection-start-column="2" selection-end-line="179" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/HemisphereSampling.cginc" />
+    <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweener/SpiralBehavior.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <marker date="1567572766748" expanded="true" signature="6:62" ph="..." />
+            <marker date="1567572766748" expanded="true" signature="166:697" ph="{...}" />
+            <marker date="1567572766748" expanded="true" signature="250:262" ph="{...}" />
+            <marker date="1567572766748" expanded="true" signature="369:695" ph="{...}" />
+            <marker date="1567572766748" expanded="true" signature="411:689" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/Random.cginc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- particle_controller/ParticleTweener/ParticleTweener/ParticleDirectionTweener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <marker date="1567177037748" expanded="true" signature="131:751" ph="{...}" />
+            <marker date="1567177037748" expanded="true" signature="258:346" ph="{...}" />
+            <marker date="1567177037748" expanded="true" signature="453:749" ph="{...}" />
+            <marker date="1567177037748" expanded="true" signature="495:743" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/Shade2.0.cginc" />
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/Shade.cginc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/Shade2.cginc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/VectorCalc.cginc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/SDFs.cginc" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@3.0.7/Runtime/SpriteShapeGenerator.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/- glitch/scripts/SlashEffect.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <marker date="1574818365370" expanded="true" signature="6:37" ph="..." />
+            <marker date="1574818365370" expanded="true" signature="79:1443" ph="{...}" />
+            <marker date="1574818365370" expanded="true" signature="482:823" ph="{...}" />
+            <marker date="1574818365370" expanded="true" signature="866:988" ph="{...}" />
+            <marker date="1574818365370" expanded="true" signature="1030:1273" ph="{...}" />
+            <marker date="1574818365370" expanded="true" signature="1335:1441" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- simpleShaders/Occlusion.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <marker date="1577660054228" expanded="true" signature="25:124" ph="{...}" />
+            <marker date="1577660054228" expanded="true" signature="45:122" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1452">
+          <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+          <folding>
+            <marker date="1581457669872" expanded="true" signature="393:622" ph="{...}" />
+            <marker date="1581457669872" expanded="true" signature="665:1585" ph="{...}" />
+            <marker date="1581457669872" expanded="true" signature="782:1000" ph="{...}" />
+            <marker date="1581457669872" expanded="true" signature="1068:1321" ph="{...}" />
+            <marker date="1581457669872" expanded="true" signature="1403:1579" ph="{...}" />
+            <marker date="1581457669872" expanded="true" signature="1666:1741" ph="{...}" />
+            <marker date="1581457669872" expanded="true" signature="1793:2227" ph="{...}" />
+            <marker date="1581457669872" expanded="true" signature="2265:2801" ph="{...}" />
+            <marker date="1581457669872" expanded="true" signature="2368:2795" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/ComputeRayMarching.compute">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayCameraStructs.cginc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        <state relative-caret-position="528">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/SDF.cginc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- RayMarching/RayMarching.cginc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/- simpleShaders/ddd.shader">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

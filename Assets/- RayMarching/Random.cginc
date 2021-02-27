@@ -2,7 +2,7 @@
 #define RANDOM
 
 float2 _Pixel;
-float _Seed;
+float _Seed = 78;
 
 float rand()
 {

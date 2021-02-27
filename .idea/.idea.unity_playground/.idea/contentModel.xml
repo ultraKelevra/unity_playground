@@ -47,6 +47,7 @@
               <e p="ParticleSplineBehavior.cs" t="Include" />
               <e p="ParticleTweenerModule.cs" t="Include" />
               <e p="ParticleTweenerUtility.cs" t="Include" />
+              <e p="SpiralBehavior.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -57,11 +58,14 @@
         </e>
         <e p="- RayMarching" t="Include">
           <e p="ComputeRayMarching.compute" t="Include" />
-          <e p="DistributionTester.cs" t="Include" />
           <e p="Random.cginc" t="Include" />
           <e p="RayCameraStructs.cginc" t="Include" />
           <e p="RayMarcher.cs" t="Include" />
           <e p="RayMarching.cginc" t="Include" />
+          <e p="SDF.cginc" t="Include" />
+          <e p="Shade.cginc" t="Include" />
+          <e p="Shade2.cginc" t="Include" />
+          <e p="VectorCalc.cginc" t="Include" />
         </e>
         <e p="- RayTracing" t="Include">
           <e p="AddShader.shader" t="Include" />
@@ -71,6 +75,9 @@
         <e p="- roundWorld" t="Include">
           <e p="RoundMesh.shader" t="Include" />
           <e p="RoundWorldAvatar.cs" t="Include" />
+        </e>
+        <e p="- simpleShaders" t="Include">
+          <e p="Occlusion.shader" t="Include" />
         </e>
         <e p="- vox-mesh" t="Include">
           <e p="VoxelBuffer.cs" t="Include" />

@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - PostProcessing
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: floor_0
+    uniqueID: 2037595907
+    locked: 0
+  - name: floor_1
+    uniqueID: 1825301327
     locked: 0

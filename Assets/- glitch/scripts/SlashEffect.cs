@@ -1,6 +1,5 @@
 ﻿using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Experimental.UIElements;
 
 public class SlashEffect : MonoBehaviour
 {

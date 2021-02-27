@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
-using UnityEngine.UI;
 
 [RequireComponent(typeof(Camera))]
 //[ExecuteInEditMode]
@@ -14,6 +12,7 @@ public class RayMarcher : MonoBehaviour
     private int _height;
     public Texture SkyboxTexture;
     public Light light;
+    
     private void Awake()
     {
         _camera = GetComponent<Camera>();
@@ -29,8 +28,8 @@ public class RayMarcher : MonoBehaviour
         {
             _width = _camera.pixelWidth;
             _height = _camera.pixelHeight;
-            RayMarchingShader.SetInt("width", _width);
-            RayMarchingShader.SetInt("height", _height);
+            RayMarchingShader.SetInt("_Width", _width);
+            RayMarchingShader.SetInt("_Height", _height);
         }
 
         //update camera position
@@ -82,20 +81,4 @@ public class RayMarcher : MonoBehaviour
             _target.Create();
         }
     }
-
-//#if UNITY_EDITOR
-//    void Update()
-//    {
-//    }
-//#endif
-
-//    private void OnEnable()
-//    {
-//        update buffers
-//    }
-
-//    private void OnDisable()
-//    {
-//        release buffers
-//    }
 }

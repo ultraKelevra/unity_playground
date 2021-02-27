@@ -287,7 +287,6 @@ GameObject:
   - component: {fileID: 1047313736}
   - component: {fileID: 1047313737}
   - component: {fileID: 1047313740}
-  - component: {fileID: 1047313741}
   - component: {fileID: 1047313739}
   m_Layer: 0
   m_Name: Particle System
@@ -304,7 +303,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047313735}
   serializedVersion: 6
-  lengthInSec: 5
+  lengthInSec: 15
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -379,7 +378,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 20
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -864,7 +863,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 100
+    maxNumParticles: 1000
     size3D: 1
     rotation3D: 0
     gravityModifier:
@@ -1129,7 +1128,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 50
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4939,7 +4938,7 @@ ParticleSystemRenderer:
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_VertexStreams: 00010304
-  m_Mesh: {fileID: 4300000, guid: 92191e70192aa244a92af8f016ef4841, type: 3}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -4967,7 +4966,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1047313735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1b00f1916a5a4040b18bda55de26e6a, type: 3}
+  m_Script: {fileID: 11500000, guid: d7dd69de0b3663840a895bcd90c4691e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1047313740
@@ -4982,464 +4981,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bcce03b9ebaffe4da7042ee8651e1a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1047313741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047313735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6207e42eda0e7774ea5de05680500c09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resolution: 12
-  obstacles:
-  - position: {x: -0.91, y: 0, z: 2.67}
-    radius: 4.89
-  - position: {x: -0.5, y: 1, z: 5}
-    radius: 3
-  - position: {x: 2, y: 0, z: 10}
-    radius: 4
-  CurvesOnUse:
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  - Spline:
-    - position: {x: 0.6675224, y: 0, z: -1.9585552}
-      controlPoint: {x: 0, y: 1, z: 0}
-    - position: {x: 1.7284403, y: 0, z: -1.4471264}
-      controlPoint: {x: 0, y: 1, z: 1.25}
-    - position: {x: 3.8968418, y: 0, z: 1.7720182}
-      controlPoint: {x: 0, y: 1, z: 2.5}
-    - position: {x: 2.2677631, y: 0, z: 6.008972}
-      controlPoint: {x: 0, y: 1, z: 3.75}
-    - position: {x: 0.5317749, y: -0.10316369, z: 6.2806354}
-      controlPoint: {x: 0, y: 1, z: 5}
-    - position: {x: -0.27468395, y: -0.14010642, z: 6.7127247}
-      controlPoint: {x: 0, y: 1, z: 6.25}
-    - position: {x: -0.6125798, y: -0.12772676, z: 6.9737625}
-      controlPoint: {x: 0, y: 1, z: 7.5}
-    - position: {x: -1.3919933, y: 0, z: 7.880004}
-      controlPoint: {x: 0, y: 1, z: 8.75}
-    - position: {x: -2, y: 0, z: 10}
-      controlPoint: {x: 0, y: 1, z: 10}
-    - position: {x: -1.3919933, y: 0, z: 12.119996}
-      controlPoint: {x: 0, y: 1, z: 11.25}
-    - position: {x: -0.49878025, y: 0, z: 13.123475}
-      controlPoint: {x: 0, y: 1, z: 12.5}
-    - position: {x: 0, y: 0, z: 13.75}
-      controlPoint: {x: 0, y: 1, z: 13.75}
-    - position: {x: 0, y: 0, z: 15}
-      controlPoint: {x: 0, y: 0, z: 14}
-    _segmentCount: 12
-    _segmentRange: 0.083333336
-  a: {x: 0, y: 0, z: 0}
-  b: {x: 0, y: 0, z: 15}
 --- !u!1 &1333776066
 GameObject:
   m_ObjectHideFlags: 0
