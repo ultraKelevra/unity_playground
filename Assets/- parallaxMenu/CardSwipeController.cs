@@ -13,19 +13,68 @@ public class CardSwipeController : MonoBehaviour
     {
         EnhancedTouchSupport.Disable();
     }
-
-    public bool sliding;
-    public Vector2 touchStart;
+    
     void StartTouch(Vector2 p)
     {
         sliding = true;
-        cardAxis = 0;
+        _cardAxis = 0;
         touchStart = p;
     }
 
+    
+    public enum CardMenuState
+    {
+        Idle,
+        TransitionLeave,
+        LoadingCard,
+        TransitionEnter
+    }
+
+    private bool sliding;
+    private Vector2 touchStart;
     private float time;
     private float countDown = 0;
+    public float pauseAfterDiscarding = 1.0f;
+    public float pauseAfterAppear = 1.0f;
+    public CardMenuState menuState = CardMenuState.LoadingCard;
     
+    public bool interactable = false;    
+    private float _cardAxis = 0;
+    private float _cardSlideSpeed = 0;
+    [Range(0,.5f)]
+    public float cardSlideDeadRange = 0.2f;
+    public float cardInertiaDeadRange = 0.01f;
+
+    public float cardInertiaSpeed = 3.5f;
+    public float dampenAxis = 0;
+    public Animator anim;
+    private static readonly int _discard_id = Animator.StringToHash("Discard");
+    private static readonly int _slide_id = Animator.StringToHash("Slide");
+    private static readonly int _appear_id = Animator.StringToHash("Appear");
+
+    void Start()
+    {
+        //TODO: do this on an asset load callback
+        Appear();
+    }
+    void LoadNextCard()
+    {
+        //do something with addressables
+    }
+
+    void Appear()
+    {
+        anim.SetTrigger(_appear_id);
+        menuState = CardMenuState.TransitionEnter;
+        SetNonInteractableTime(pauseAfterAppear);
+    }
+
+    void Disappear()
+    {
+        anim.SetTrigger(_discard_id);
+        menuState = CardMenuState.TransitionLeave;
+        SetNonInteractableTime(pauseAfterDiscarding);
+    }
     void SetNonInteractableTime(float t)
     {
         time = Time.time;
@@ -36,52 +85,91 @@ public class CardSwipeController : MonoBehaviour
     void SlideLeft()
     {
         //do things on the left
-        anim.SetTrigger(Slide);
+        Disappear();
     }
 
     void SlideRight()
     {
         //do things for the right
-        anim.SetTrigger(Slide);
+        
+        Disappear();
     }
+    
     void EndTouch()
     {
         if (sliding)
         {
             sliding = false;
+            if (1.0f - cardSlideDeadRange < Mathf.Abs(dampenAxis))
+            {
+                if(_cardAxis > 0)
+                    SlideRight();
+                else
+                    SlideLeft();
+
+                SetNonInteractableTime(pauseAfterDiscarding);
+                menuState = CardMenuState.TransitionLeave;
+            }
         }
 
-        cardAxis = 0;
+        _cardAxis = 0;
     }
 
-    public bool interactable = false;    
-    public float cardAxis = 0;
-    public float cardDeadRange = 0.2f;
-    public float cardSlideSpeed = 0;
-    public float cardInertiaSpeed = 3.5f;
-    public float dampenAxis = 0;
-    public Animator anim;
-    private static readonly int Slide = Animator.StringToHash("Slide");
-    private static readonly int CardSlide = Animator.StringToHash("CardSlide");
-    public Vector2 n;
     void UpdateTouch(Vector2 p)
     {
-        
         var pos = p - touchStart;
-        n = pos;
         var axis = pos.x;
-        cardAxis = axis * (1+ cardDeadRange);
+        _cardAxis = axis * (1+ cardSlideDeadRange);
     }
 
     void UpdateCardGraphics()
     {
-        dampenAxis = Mathf.SmoothDamp(dampenAxis, cardAxis, ref cardSlideSpeed, cardInertiaSpeed);
-        anim.SetFloat(CardSlide, dampenAxis);
-        Debug.Log("UpdatingDampenAxis");
+        if ( !sliding && Mathf.Abs(dampenAxis) < cardInertiaDeadRange)
+        {
+            dampenAxis = 0;
+            return;
+        }
+
+        dampenAxis = Mathf.SmoothDamp(dampenAxis, _cardAxis, ref _cardSlideSpeed, cardInertiaSpeed);
+        anim.SetFloat(_slide_id, dampenAxis);
+    }
+
+    void CheckAfterNonInteractableStage()
+    {
+        interactable = true;
+
+        switch (menuState)
+        {
+            case CardMenuState.LoadingCard:
+                anim.SetTrigger(_appear_id);
+                menuState = CardMenuState.TransitionEnter;
+                //TODO: load next card
+                Debug.Log("loading -> transition");
+                // SetNonInteractableTime(pauseAfterAppear);
+                break;
+            case CardMenuState.TransitionEnter:
+                //TODO: IDK... seems it's all good
+                menuState = CardMenuState.Idle;
+                break;
+            case CardMenuState.TransitionLeave:
+                //TODO: load next card and leave a callback to replace shown graphics and display appearing animation
+                menuState = CardMenuState.LoadingCard;
+                break;
+        }
     }
 
     protected void Update()
     {
+        if (!interactable)
+        {
+            if (Time.time < time + countDown)
+            {
+                CheckAfterNonInteractableStage();
+            }
+            else
+                return;
+        }
+
         var activeTouches = Touch.activeTouches;
         if (activeTouches.Count == 0)
         {

@@ -9,10 +9,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Slide
+    m_ConditionEvent: Discard
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: CardSlide
+    m_ConditionEvent: Slide
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6994632919394376528}
@@ -20,10 +20,10 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.15
   m_TransitionOffset: 0
   m_ExitTime: 0.75
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -124,9 +124,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_ExitTime: 1
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -146,9 +146,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_ExitTime: 1
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -177,7 +177,7 @@ AnimatorStateMachine:
     m_Position: {x: 600, y: -270, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7774949689336425071}
-    m_Position: {x: 390, y: -400, z: 0}
+    m_Position: {x: 430, y: -420, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -187,7 +187,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -7774949689336425071}
+  m_DefaultState: {fileID: 6359838267203925674}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -197,13 +197,13 @@ AnimatorController:
   m_Name: Card
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: CardSlide
+  - m_Name: Slide
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Slide
+  - m_Name: Discard
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -267,7 +267,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: 11a7d329cbc0b4f4abc4d33b82a21529, type: 2}
     m_Threshold: -1
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: -1
     m_CycleOffset: 0
     m_DirectBlendParameter: CardSlide
     m_Mirror: 0
@@ -275,7 +275,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: 78713d5d145bebe4f87bc93311704a49, type: 2}
     m_Threshold: -0.6
     m_Position: {x: 0, y: 0}
-    m_TimeScale: -0.75
+    m_TimeScale: -0.3
     m_CycleOffset: 0
     m_DirectBlendParameter: CardSlide
     m_Mirror: 0
@@ -283,7 +283,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: 9c82ac9d5938b8b4ba8b502a22d87bee, type: 2}
     m_Threshold: -0.19999999
     m_Position: {x: 0, y: 0}
-    m_TimeScale: -0.25
+    m_TimeScale: -0.15
     m_CycleOffset: 0
     m_DirectBlendParameter: CardSlide
     m_Mirror: 0
@@ -291,7 +291,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: ecd651573f0ef7742a3b4564507eb88f, type: 2}
     m_Threshold: 0.20000005
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 0.25
+    m_TimeScale: 0.15
     m_CycleOffset: 0
     m_DirectBlendParameter: CardSlide
     m_Mirror: 0
@@ -299,7 +299,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: 25a5d8e45e44edc42ac8897f44821549, type: 2}
     m_Threshold: 0.6
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 0.75
+    m_TimeScale: 0.3
     m_CycleOffset: 0
     m_DirectBlendParameter: CardSlide
     m_Mirror: 0
@@ -311,7 +311,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: CardSlide
     m_Mirror: 0
-  m_BlendParameter: CardSlide
+  m_BlendParameter: Slide
   m_BlendParameterY: CardSlide
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -401,10 +401,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Slide
+    m_ConditionEvent: Discard
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: CardSlide
+    m_ConditionEvent: Slide
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1752039127250261570}
@@ -412,10 +412,10 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.15
   m_TransitionOffset: 0
   m_ExitTime: 0.75
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
