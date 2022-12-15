@@ -14,11 +14,10 @@ public class CardSwipeController : MonoBehaviour
         EnhancedTouchSupport.Disable();
     }
     
-    void StartTouch(Vector2 p)
+    void StartTouch()
     {
         sliding = true;
         _cardAxis = 0;
-        touchStart = p;
     }
 
     
@@ -34,18 +33,22 @@ public class CardSwipeController : MonoBehaviour
     private Vector2 touchStart;
     private float time;
     private float countDown = 0;
+    private const float CardInertiaDeadRange = 0.01f;
+
     public float pauseAfterDiscarding = 1.0f;
     public float pauseAfterAppear = 1.0f;
     public CardMenuState menuState = CardMenuState.LoadingCard;
-    
-    public bool interactable = false;    
+
+    public bool Interactable => menuState == CardMenuState.Idle;
     private float _cardAxis = 0;
     private float _cardSlideSpeed = 0;
+    
     [Range(0,.5f)]
-    public float cardSlideDeadRange = 0.2f;
-    public float cardInertiaDeadRange = 0.01f;
+    public float cardSlideDeadRange = 0.35f;
 
-    public float cardInertiaSpeed = 3.5f;
+
+    public float cardInertiaSpeed = 0.1f;
+    // [HideInInspector]
     public float dampenAxis = 0;
     public Animator anim;
     private static readonly int _discard_id = Animator.StringToHash("Discard");
@@ -60,6 +63,11 @@ public class CardSwipeController : MonoBehaviour
     void LoadNextCard()
     {
         //do something with addressables
+        
+        //change current menuState
+        menuState = CardMenuState.LoadingCard;
+        
+        // once loaded the info, update the card graphics and call Appear()
     }
 
     void Appear()
@@ -73,13 +81,13 @@ public class CardSwipeController : MonoBehaviour
     {
         anim.SetTrigger(_discard_id);
         menuState = CardMenuState.TransitionLeave;
+        Debug.Log("Disappearing");
         SetNonInteractableTime(pauseAfterDiscarding);
     }
     void SetNonInteractableTime(float t)
     {
         time = Time.time;
         countDown = t;
-        interactable = false;
     }
 
     void SlideLeft()
@@ -91,7 +99,6 @@ public class CardSwipeController : MonoBehaviour
     void SlideRight()
     {
         //do things for the right
-        
         Disappear();
     }
     
@@ -115,54 +122,61 @@ public class CardSwipeController : MonoBehaviour
         _cardAxis = 0;
     }
 
-    void UpdateTouch(Vector2 p)
+    void UpdateTouch(Touch touch)
     {
-        var pos = p - touchStart;
-        var axis = pos.x;
-        _cardAxis = axis * (1+ cardSlideDeadRange);
+        var h = Screen.height;
+        var w = Screen.width;
+        var touchPos = touch.screenPosition;
+        var touchStartPos = touch.startScreenPosition;
+        var vector = new Vector2((touchPos.x - touchStartPos.x) / w, (touchPos.y - touchStartPos.y) / h);
+        
+        var axis = vector.x;
+        _cardAxis = axis * (1 + cardSlideDeadRange);
     }
 
     void UpdateCardGraphics()
     {
-        if ( !sliding && Mathf.Abs(dampenAxis) < cardInertiaDeadRange)
+        if ( !sliding && Mathf.Abs(dampenAxis) < CardInertiaDeadRange)
         {
             dampenAxis = 0;
             return;
         }
 
+        if (menuState == CardMenuState.TransitionLeave)
+            return;
         dampenAxis = Mathf.SmoothDamp(dampenAxis, _cardAxis, ref _cardSlideSpeed, cardInertiaSpeed);
         anim.SetFloat(_slide_id, dampenAxis);
     }
 
     void CheckAfterNonInteractableStage()
     {
-        interactable = true;
-
         switch (menuState)
         {
+            //TODO: this case will be removed once the loading is handled by another entity
             case CardMenuState.LoadingCard:
-                anim.SetTrigger(_appear_id);
-                menuState = CardMenuState.TransitionEnter;
-                //TODO: load next card
-                Debug.Log("loading -> transition");
-                // SetNonInteractableTime(pauseAfterAppear);
+                Appear();
                 break;
             case CardMenuState.TransitionEnter:
                 //TODO: IDK... seems it's all good
                 menuState = CardMenuState.Idle;
                 break;
             case CardMenuState.TransitionLeave:
-                //TODO: load next card and leave a callback to replace shown graphics and display appearing animation
-                menuState = CardMenuState.LoadingCard;
+                LoadNextCard();
+                //TODO: make this into a callback instead of another timer
+                //after this card loads the Appear() method should be called
+                SetNonInteractableTime(1.0f);
+                //TODO: CheckAfterNonInteractableStage() should never call SetNonInteractableTime() but this is mocking the load card time (0.1 sec)
                 break;
         }
     }
 
     protected void Update()
     {
-        if (!interactable)
+        UpdateCardGraphics();
+
+        if (!Interactable)
         {
-            if (Time.time < time + countDown)
+            if (Time.time > time + countDown)
             {
                 CheckAfterNonInteractableStage();
             }
@@ -178,19 +192,15 @@ public class CardSwipeController : MonoBehaviour
         else
         {
             var currentTouch = activeTouches[0];
-            var position = currentTouch.screenPosition;
-            var w = Screen.width;
-            var h = Screen.height;
-            var normalized = new Vector2(position.x / w, position.y / h);
 
-            if (currentTouch.began)
+            if (currentTouch.began && menuState == CardMenuState.Idle)
             {
-                StartTouch(normalized);
+                StartTouch();
+                Debug.Log("startingTouch");
                 return;
             }
 
-            UpdateTouch(normalized);
+            UpdateTouch(currentTouch);
         }
-        UpdateCardGraphics();
     }
 }

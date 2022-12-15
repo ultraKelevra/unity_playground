@@ -3,13 +3,42 @@
   <component name="ChangeListManager">
     <list default="true" id="c37e08b2-d5d8-4a3b-a47e-f9058fdb5957" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity_playground/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Benne-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- parallaxMenu/Benne-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/Card.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/Card.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/anim_card_blackout.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/anim_card_blackout.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/Card.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/Card.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/aim_card_right_top.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/aim_card_right_top.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/anim_card_idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/anim_card_idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/anim_card_idle_left.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/anim_card_idle_left.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/anim_card_left_top.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/Card/Animation/anim_card_left_top.anim.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/CardSwipeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- parallaxMenu/CardSwipeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/ParallaxMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- parallaxMenu/ParallaxMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/- parallaxMenu/parallaxMapping.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/- parallaxMenu/parallaxMapping.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker3.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe12.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe13.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe13.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe14.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe14.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,6 +234,7 @@
       <workItem from="1670607448137" duration="1099000" />
       <workItem from="1671032745183" duration="1724000" />
       <workItem from="1671036871079" duration="16796000" />
+      <workItem from="1671127103481" duration="4563000" />
     </task>
     <servers />
   </component>
