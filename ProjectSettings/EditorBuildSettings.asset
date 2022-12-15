@@ -11,4 +11,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/- roundWorld/- roundWorld.unity
     guid: 67cffbed709b2d743a37475e4cffbfd1
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 17b0857c6e57055479192805f0bb047c,
+      type: 2}
